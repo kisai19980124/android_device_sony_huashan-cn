@@ -18,7 +18,7 @@ TARGET_PROVIDES_ADRENO_DRIVER := true
 # Inherit qcom-common files.
 $(call inherit-product, device/sony/qcom-common/qcom-common.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/sony/huashan/overlay
+DEVICE_PACKAGE_OVERLAYS += device/sony/huashan-cn/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -216,7 +216,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.qc.sdk.izat.premium_enabled=0 \
     ro.qc.sdk.izat.service_mask=0x4 \
     persist.gps.qc_nlp_in_use=0 \
-    ro.gps.agps_provider=1 \
+    ro.gps.agps_providesr=1 \
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \

@@ -22,9 +22,9 @@ include device/sony/qcom-common/BoardConfigCommon.mk
 -include vendor/sony/huashan/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := C5302,C5303,C5306,huashan
+TARGET_OTA_ASSERT_DEVICE := C5302,C5303,C5306,huashan-cn,M53c
 
-TARGET_SPECIFIC_HEADER_PATH += device/sony/huashan/include
+TARGET_SPECIFIC_HEADER_PATH += device/sony/huashan-cn/include
 
 # Kernel properties
 TARGET_KERNEL_SOURCE := kernel/sony/msm8x60
@@ -75,7 +75,7 @@ WIFI_DRIVER_FW_PATH_AP           := "ap"
 
 BOARD_USE_SONY_MACUPDATE := true
 
-BOARD_HARDWARE_CLASS := device/sony/huashan/cmhw
+BOARD_HARDWARE_CLASS := device/sony/huashan-cn/cmhw
 
 # Camera
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -88,7 +88,7 @@ TARGET_NO_RPC := true
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/huashan/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/huashan-cn/bluetooth
 
 # Needed for blobs
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
@@ -101,10 +101,10 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/
 
 # Custom boot
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-BOARD_CUSTOM_BOOTIMG_MK := device/sony/huashan/custombootimg.mk
+BOARD_CUSTOM_BOOTIMG_MK := device/sony/huashan-cn/custombootimg.mk
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_15x24.h\"
 
-TARGET_RECOVERY_FSTAB := device/sony/huashan/rootdir/fstab.qcom
+TARGET_RECOVERY_FSTAB := device/sony/huashan-cn/rootdir/fstab.qcom
 RECOVERY_FSTAB_VERSION := 2
 
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -137,7 +137,7 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1056964608
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 2147483648
 
 BOARD_SEPOLICY_DIRS += \
-    device/sony/huashan/sepolicy
+    device/sony/huashan-cn/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
