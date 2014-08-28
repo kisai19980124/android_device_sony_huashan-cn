@@ -3,6 +3,8 @@ Sony Xperia SP
 
 The Sony Xperia SP (codenamed _"HuaShan"_) is a mid-range smartphone from Sony Mobile.
 
+THIS IS THE CHINESE VERSION - M35C
+
 It was announced on 18 March 2013. It is supported in CyanogenMod 10.2 and CyanogenMod 11.
 
 Basic   | Spec Sheet
